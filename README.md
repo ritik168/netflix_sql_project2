@@ -5,6 +5,7 @@
 
 ## Objectives
  . Analyze the distribution of content types (movies vs TV shows).
+ 
  . dentify the most common ratings for movies and TV shows.
  . List and analyze content based on release years, countries, and durations.
  . Explore and categorize content based on specific criteria and keywords.
