@@ -230,15 +230,19 @@ LIMIT 5;
 ## Objective: Calculate and rank years by the average number of content releases by India.
 
 #### 11. List All Movies that are Documentaries
+``|
 SELECT * 
 FROM netflix
 WHERE listed_in LIKE '%Documentaries';
+```
 ## Objective: Retrieve all movies classified as documentaries.
 
 ## 12. Find All Content Without a Director
+```
 SELECT * 
 FROM netflix
 WHERE director IS NULL;
+```
 ## Objective: List content that does not have a director.
 
 #### 13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 10 Years
@@ -248,7 +252,7 @@ FROM netflix
 WHERE casts LIKE '%Salman Khan%'
   AND release_year > EXTRACT(YEAR FROM CURRENT_DATE) - 10;
   ```
-##:Objective: Count the number of movies featuring 'Salman Khan' in the last 10 years.
+## :Objective: Count the number of movies featuring 'Salman Khan' in the last 10 years.
 
 #### 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
 ``|
