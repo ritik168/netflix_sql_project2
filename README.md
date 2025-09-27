@@ -211,7 +211,7 @@ GROUP BY 1;
 ## Objective: Count the number of content items in each genre.
 
 #### 10.Find each year and the average numbers of content release in India on netflix.
-Q.1 return top 5 year with highest avg content release!
+## Q.1 return top 5 year with highest avg content release!
 ```
 SELECT 
     country,
@@ -235,20 +235,23 @@ FROM netflix
 WHERE listed_in LIKE '%Documentaries';
 ## Objective: Retrieve all movies classified as documentaries.
 
-12. Find All Content Without a Director
+## 12. Find All Content Without a Director
 SELECT * 
 FROM netflix
 WHERE director IS NULL;
-Objective: List content that does not have a director.
+## Objective: List content that does not have a director.
 
-13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 10 Years
+#### 13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 10 Years
+```
 SELECT * 
 FROM netflix
 WHERE casts LIKE '%Salman Khan%'
   AND release_year > EXTRACT(YEAR FROM CURRENT_DATE) - 10;
-Objective: Count the number of movies featuring 'Salman Khan' in the last 10 years.
+  ```
+##:Objective: Count the number of movies featuring 'Salman Khan' in the last 10 years.
 
-14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
+#### 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
+``|
 SELECT 
     UNNEST(STRING_TO_ARRAY(casts, ',')) AS actor,
     COUNT(*)
@@ -257,3 +260,4 @@ WHERE country = 'India'
 GROUP BY actor
 ORDER BY COUNT(*) DESC
 LIMIT 10;
+```
