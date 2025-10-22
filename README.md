@@ -1,16 +1,17 @@
 # Netflix Movies and TV Shows Data  Analysis using SQL
 ![Netflix Logo](https://github.com/ritik168/netflix_sql_project2/blob/main/logo.png)
-## Overview
-#### This project involves a comprehensive analysis of Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems, solutions, findings, and conclusions.
+#### Overview
+This project involves a comprehensive analysis of Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems, solutions, findings, and conclusions.
 
 ## Objectives
-# . Analyze the distribution of content types (movies vs TV shows).
+. Analyze the distribution of content types (movies vs TV shows).
  . dentify the most common ratings for movies and TV shows.
  . List and analyze content based on release years, countries, and durations.
  . Explore and categorize content based on specific criteria and keywords.
 
 ## Dataset
-#### . The data for this project is sourced from the Kaggle dataset:
+. The data for this project is sourced from the Kaggle dataset:
+
 ## Schema
 ```
 DROP TABLE IF EXISTS netflix;
@@ -66,19 +67,19 @@ Netflix Movies and TV Shows Data Analysis using SQL
 
 
 ## Overview
-#### This project involves a            comprehensive analysis of #### Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems, solutions, findings, and
-## conclusions.
+This project involves a            comprehensive analysis of Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems, solutions, findings, and conclusions.
 
 ## Objectives
-#### Analyze the distribution of content types (movies vs TV shows).
-#### Identify the most common ratings for movies and TV shows.
-#### List and analyze content based on release years, countries, and durations.
-#### Explore and categorize content based on specific criteria and keywords.
+.Analyze the distribution of content types (movies vs TV shows).
+.Identify the most common ratings for movies and TV shows.
+.List and analyze content based on release years,countries, and durations.
+.Explore and categorize content based on specific criteria and keywords.
+
 ## Dataset
-#### The data for this project is sourced from the Kaggle dataset:
+.The data for this project is sourced from the Kaggle dataset:
 
 ## Dataset Link: Movies Dataset
-#### Schema
+Schema
 ```
 DROP TABLE IF EXISTS netflix;
 CREATE TABLE netflix
@@ -98,7 +99,7 @@ CREATE TABLE netflix
 );
 ```
 ## Business Problems and Solutions
-#### 1. Count the Number of Movies vs TV Shows
+#### 1.Count the Number of Movies vs TV Shows
 
 ```
 SELECT 
@@ -133,7 +134,8 @@ SELECT
 FROM RankedRatings
 WHERE rank = 1;
 ```
-## Objective: Identify the most frequently occurring rating for each type of content.
+## Objective: 
+#### Identify the most frequently occurring rating for each type of content.
 
 #### 3. List All Movies Released in a Specific Year (e.g., 2020)
 ```
