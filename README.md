@@ -254,10 +254,10 @@ FROM netflix
 WHERE casts LIKE '%Salman Khan%'
   AND release_year > EXTRACT(YEAR FROM CURRENT_DATE) - 10;
   ```
-## :Objective: Count the number of movies featuring 'Salman Khan' in the last 10 years.
+## Objective: Count the number of movies featuring 'Salman Khan' in the last 10 years.
 
 #### 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
-``|
+```
 SELECT 
     UNNEST(STRING_TO_ARRAY(casts, ',')) AS actor,
     COUNT(*)
